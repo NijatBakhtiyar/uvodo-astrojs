@@ -1,0 +1,44 @@
+.uvodoInfo {
+  padding: 104px 0;
+  margin-top: 264px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.left {
+  flex: 1;
+
+  .badge {
+    display: inline-block;
+    padding: 0 16px;
+    background-color: #f3f2fd;
+    margin-bottom: 16px;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+  }
+
+  h2 {
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
+
+  a span {
+    background-color: black;
+    color: white;
+  }
+}
+
+.right {
+  flex: 1;
+  background-color: #eafa35;
+  border-radius: 8px;
+  padding: 80px 0 80px 80px;
+}

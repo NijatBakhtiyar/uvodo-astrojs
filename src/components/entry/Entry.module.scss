@@ -1,5 +1,7 @@
 .entrance {
   padding-top: 104px;
+  position: relative;
+  background: #f3f2fd;
 }
 
 .top {
@@ -32,42 +34,63 @@
 
 .admin {
   padding-top: 24px;
-  background-image: url(".././images/grid.svg");
+  background-image: url("../../images/grid.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -160px;
 
   .imageAdmin {
-    height: 588px;
+    height: 580px;
     width: 936px;
-    margin: 40px auto;
+    margin: 72px auto;
+    position: relative;
+    z-index: 1;
   }
 
   .btnGroup {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     gap: 16px;
 
     a {
       border: none;
-      padding: 16px 32px;
-      border-radius: 4px;
-      box-shadow: -4px 4px 0px #d4c5fb;
-      display: flex;
-      align-items: center;
-      gap: 8px;
       font-weight: 500;
 
       &:first-child {
-        background-color: black;
-        color: #fff;
+        span {
+          background-color: black;
+          color: #fff;
+        }
       }
 
       &:nth-child(2) {
-        background-color: white;
-        color: black;
-        border: 1px solid black;
+        span {
+          background-color: white;
+          color: black;
+          border: 1px solid black;
+        }
       }
     }
+  }
+}
+
+.leaders {
+  background-color: #d4c5fb;
+  padding-top: 188px;
+  padding-bottom: 72px;
+  position: absolute;
+  bottom: -264px;
+  width: 100%;
+
+  p {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
   }
 }

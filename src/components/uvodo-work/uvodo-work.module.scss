@@ -1,0 +1,61 @@
+.uvodoWork {
+  padding: 104px 0;
+  background-color: #f3f2fd;
+}
+
+.title {
+  max-width: 640px;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 72px;
+}
+
+.uvodoWorkSteps {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.uvodoWorkStep {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 8px 8px 0px #000000;
+  transform: translate(-4px, -4px);
+  border: 2px solid #000;
+  transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+  gap: 264px;
+  color: #000;
+
+  &:hover {
+    transform: translate(0px, 0px);
+    box-shadow: 0px 0px 0px #000000;
+    border-color: #fff;
+  }
+
+  span {
+    display: inline-block;
+    color: #ff53dd;
+    font-size: 32px;
+    line-height: 48px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
