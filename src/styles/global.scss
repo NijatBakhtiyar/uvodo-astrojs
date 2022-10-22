@@ -66,24 +66,55 @@ section {
   padding: 0 16px;
 }
 
-.btnBox {
-  background-color: #d4c5fb;
-  border-radius: 4px;
+.badge {
   display: inline-block;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  line-height: 40px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
 
-  .btn {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 16px 32px;
-    border-radius: 4px;
-    transform: translate(4px, -4px);
-    transition: transform 0.2s;
-    font-weight: 500;
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  transform: translate(4px, -4px);
+  box-shadow: -4px 4px 0px #d4c5fb;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
 
-    &:hover {
-      transform: translate(0px, 0px);
-    }
+  &:hover {
+    transform: translate(0px, 0px);
+    box-shadow: 0px 0px 0px #d4c5fb;
   }
 }
+
+// .btnBox {
+//   background-color: #d4c5fb;
+//   border-radius: 4px;
+//   display: inline-block;
+
+//   .btn {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     gap: 8px;
+//     padding: 16px 32px;
+//     border-radius: 4px;
+//     transform: translate(4px, -4px);
+//     transition: transform 0.2s;
+//     font-weight: 500;
+
+//     &:hover {
+//       transform: translate(0px, 0px);
+//     }
+//   }
+// }

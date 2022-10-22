@@ -1,10 +1,16 @@
 ---
+import DiscordLogo from "@/images/social/discord.astro";
+import FacebookLogo from "@/images/social/facebook.astro";
+import InstagramLogo from "@/images/social/instagram.astro";
+import LinkedinLogo from "@/images/social/linkedin.astro";
+import TwitterLogo from "@/images/social/twitter.astro";
+import YoutubeLogo from "@/images/social/youtube.astro";
 import styles from "./footer.module.scss";
 ---
 
 <div class={styles.footer}>
   <section>
-    <div class={styles.top}>
+    <div class={styles.footerTop}>
       <div class={styles.logo}>
         <a href="/">
           <svg
@@ -45,6 +51,7 @@ import styles from "./footer.module.scss";
           <a href="/" class={styles.text}>Blog</a>
         </div>
       </div>
+
       <div class={styles.box}>
         <div>
           <p class={styles.boxTitle}>Resources</p>
@@ -53,33 +60,78 @@ import styles from "./footer.module.scss";
           <a href="/" class={styles.text}>Product Roadmap</a>
           <a href="/" class={styles.text}>Feature requests</a>
           <a href="/" class={styles.text}>Bug reports</a>
+          <a href="/" class={styles.text}>Changelog</a>
+          <a href="/" class={styles.text}>Hide experts</a>
+          <a href="/" class={styles.text}>FAQ</a>
         </div>
       </div>
+
       <div class={styles.box}>
         <div>
-          <p class={styles.boxTitle}>Product</p>
-          <a href="/" class={styles.text}>Features</a>
-          <a href="/" class={styles.text}>Pricing</a>
+          <p class={styles.boxTitle}>Legal</p>
+          <a href="/" class={styles.text}>Terms of Service</a>
+          <a href="/" class={styles.text}>Privacy Policy</a>
+          <a href="/" class={styles.text}>Cookie Policy</a>
+          <a href="/" class={styles.text}>Refund Policy</a>
+        </div>
+      </div>
+
+      <div class={styles.box}>
+        <div>
+          <p class={styles.boxTitle}>Contact</p>
+          <a href="tel:123-456-7890" class={styles.text}>+1 650-614-1826</a>
+          <a href="mailto: info@uvodo.com" class={styles.text}>info@uvodo.com</a
+          >
         </div>
 
         <div>
-          <p class={styles.boxTitle}>Company</p>
-          <a href="/" class={styles.text}>About us</a>
-          <a href="/" class={styles.text}>Blog</a>
+          <p class={styles.boxTitle}>Uvodo HQ</p>
+          <p>548 Market St PMB 48572, San Francisco, CA 94104</p>
         </div>
       </div>
-      <div class={styles.box}>
-        <div>
-          <p class={styles.boxTitle}>Product</p>
-          <a href="/" class={styles.text}>Features</a>
-          <a href="/" class={styles.text}>Pricing</a>
-        </div>
+    </div>
 
-        <div>
-          <p class={styles.boxTitle}>Company</p>
-          <a href="/" class={styles.text}>About us</a>
-          <a href="/" class={styles.text}>Blog</a>
-        </div>
+    <div class={styles.footerBottom}>
+      <p class={styles.text}>© UVODO INC. 2022</p>
+
+      <!-- //NOTE: https://ellodave.dev/blog/article/using-svgs-as-astro-components-and-inline-css/ -->
+      <div class={styles.social}>
+        <a
+          href="https://www.facebook.com/uvodohq"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><FacebookLogo />
+        </a>
+        <a
+          href="https://www.instagram.com/uvodohq/"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><InstagramLogo />
+        </a>
+        <a
+          href="https://twitter.com/uvodohq"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><TwitterLogo />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/uvodohq/"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><LinkedinLogo />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCOFgyKJvKoSDL6vNF0YIttA"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><YoutubeLogo />
+        </a>
+        <a
+          href="https://discord.com/login?redirect_to=%2Fchannels%2F1030124418430672906%2F1030124418430672909"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><DiscordLogo />
+        </a>
       </div>
     </div>
   </section>

@@ -1,0 +1,83 @@
+---
+import BorderDashedImage from "@/images/dashed.webp";
+import AfterpayLogo from "@/images/payment/afterpay.webp";
+import FlutterwaveLogo from "@/images/payment/flutterwave.webp";
+import IyzicoLogo from "@/images/payment/iyzico.webp";
+import PaypalLogo from "@/images/payment/paypal.webp";
+import PaystackLogo from "@/images/payment/paystack.webp";
+import PayuLogo from "@/images/payment/payu.webp";
+import RazorpayLogo from "@/images/payment/razorpay.webp";
+import StripeLogo from "@/images/payment/stripe.webp";
+import { Image } from "@astrojs/image/components";
+import styles from "./uvodo-payment-developer.module.scss";
+---
+
+<div class={styles.uvodoPaymentDeveloper}>
+  <section>
+    <div class={styles.row}>
+      <div class={styles.left}>
+        <span class="badge">INTEGRATIONS</span>
+        <h2>Payment gateways</h2>
+        <p class={styles.description}>
+          Praesent quis lorem a dui ultricies tristique.
+        </p>
+        <a href="/" class="btn">See all integrations</a>
+
+        <div class={styles.gateways}>
+          <a href="/" class={styles.gateway}>
+            <Image src={PaypalLogo} alt="Paypal gateway" />
+          </a>
+          <a href="/" class={styles.gateway}>
+            <Image src={StripeLogo} alt="Stripe gateway" />
+          </a>
+          <a href="/" class={styles.gateway}>
+            <Image src={FlutterwaveLogo} alt="Flutterwave gateway" />
+          </a>
+          <a href="/" class={styles.gateway}>
+            <Image src={RazorpayLogo} alt="Razonpay gateway" />
+          </a>
+          <a href="/" class={styles.gateway}>
+            <Image src={IyzicoLogo} alt="Iyzico gateway" />
+          </a>
+          <a href="/" class={styles.gateway}>
+            <Image src={PaystackLogo} alt="Paystack gateway" />
+          </a>
+          <a href="/" class={styles.gateway}>
+            <Image src={PayuLogo} alt="Payu gateway" />
+          </a>
+          <a href="/" class={styles.gateway}>
+            <Image src={AfterpayLogo} alt="Afterpay gateway" />
+          </a>
+        </div>
+      </div>
+
+      <div class={styles.right}>
+        <span class="badge">DEVELOPER</span>
+        <h2>Developer Resources</h2>
+        <p class={styles.description}>Work with Uvodo REST APIs</p>
+        <a href="/" class="btn">Explore our API</a>
+
+        <div class={styles.container}>
+          <div class={styles.box}>
+            <Image src={BorderDashedImage} alt="Border dashed" />
+            <div class={styles.content}>
+              <p class={styles.api}>
+                <span>GET</span>
+                https://demo.uvodo:443/admin/api/<b>account</b>
+              </p>
+
+              <p class={styles.curl}><span>curl</span> --request GET\</p>
+              <p>--url https://demo.uvodo:443/admin/api/account \</p>
+              <p class={styles.header}>
+                --header <span>'Authorization: Bearer undefined' \</span>
+              </p>
+              <p class={styles.header}>
+                --header <span>'Content-Type: application/json'</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

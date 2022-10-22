@@ -1,0 +1,75 @@
+---
+import EnvatoIcon from "@/images/social/envato.webp";
+import StarIcon from "@/images/social/star.webp";
+import { Image } from "@astrojs/image/components";
+import styles from "./uvodo-feedback.module.scss";
+---
+
+<div class={styles.uvodoFeedback}>
+  <section>
+    <div class={styles.row}>
+      <div class={styles.left}>
+        <div class={styles.content}>
+          <h2>What do our customers say?</h2>
+
+          <div class={styles.envato}>
+            <p>Powered by:</p>
+            <a
+              href="https://codecanyon.net/item/uvodo-open-source-headless-ecommerce-platform/reviews/35879917"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><Image src={EnvatoIcon} alt="Envato icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class={styles.right}>
+        <div class={styles.feedback}>
+          <div class={styles.stars}>
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+          </div>
+          <p>
+            “I think the team and but its still on early stage of development.”
+          </p>
+        </div>
+        <div class={styles.feedback}>
+          <div class={styles.stars}>
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+          </div>
+          <p>
+            “I like your Admin UI design and I see a great product, keep it up”
+          </p>
+        </div>
+        <div class={styles.feedback}>
+          <div class={styles.stars}>
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+          </div>
+          <p>“I spoke with Orkhan recently and he is extremely to feedback.”</p>
+        </div>
+        <div class={styles.feedback}>
+          <div class={styles.stars}>
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+            <Image src={StarIcon} alt="Feedback star" />
+          </div>
+          <p>“The system has a good start and Thanks for everything.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

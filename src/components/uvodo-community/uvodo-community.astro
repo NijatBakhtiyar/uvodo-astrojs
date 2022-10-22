@@ -1,0 +1,26 @@
+---
+import GridWhiteImage from "@/images/grid-white.webp";
+import DiscordLogo from "@/images/social/discord.webp";
+import { Image } from "@astrojs/image/components";
+import styles from "./uvodo-community.module.scss";
+---
+
+<section>
+  <div class={styles.uvodoCommunity}>
+    <div class={styles.container}>
+      <Image src={GridWhiteImage} alt="Grid white" class={styles.grid} />
+
+      <div>
+        <h2>Join the community</h2>
+        <p>
+          Help shape the solution with other ecom builders, open source devs,
+          and the Uvodo core team
+        </p>
+        <a href="/" class="btn">
+          <Image src={DiscordLogo} alt="Discord logo" />
+          Join Discord Community
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

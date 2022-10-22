@@ -1,0 +1,42 @@
+.uvodoFeedback {
+  padding: 104px 0;
+  background-color: #f3f2fd;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.left {
+  flex: 1;
+
+  .content {
+    max-width: 528px;
+  }
+
+  h2 {
+    margin-bottom: 8px;
+  }
+
+  .envato {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 64px;
+
+  .stars {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+}

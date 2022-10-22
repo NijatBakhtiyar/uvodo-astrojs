@@ -1,7 +1,7 @@
 import mdx from "@astrojs/mdx";
+import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
-
 // https://astro.build/config
 import image from "@astrojs/image";
 
@@ -14,5 +14,6 @@ export default defineConfig({
     image({
       serviceEntryPoint: "@astrojs/image/sharp",
     }),
+    react(),
   ],
 });

@@ -1,11 +1,12 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
+import HeaderLink from "./header-link.astro";
+import styles from "./header.module.scss";
 ---
 
-<header>
+<div class={styles.header}>
   <section>
-    <div class="left">
-      <a href="/" class="logo">
+    <div class={styles.left}>
+      <a href="/" class={styles.logo}>
         <svg
           width="112"
           height="40"
@@ -30,54 +31,14 @@ import HeaderLink from "./HeaderLink.astro";
       <nav>
         <HeaderLink href="/">About us</HeaderLink>
         <HeaderLink href="/about" target="_blank">Resources</HeaderLink>
-        <HeaderLink href="/about">Blog</HeaderLink>
-        <HeaderLink href="/about">Pricing</HeaderLink>
-        <HeaderLink href="/about">Support</HeaderLink>
+        <HeaderLink href="/a">Blog</HeaderLink>
+        <HeaderLink href="/b">Pricing</HeaderLink>
+        <HeaderLink href="/c">Support</HeaderLink>
       </nav>
     </div>
 
-    <div class="download">
+    <div class={styles.download}>
       <a href="/"> Download</a>
     </div>
   </section>
-</header>
-
-<style lang="scss">
-  header {
-    background: #f3f2fd;
-
-    section {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 32px 0;
-    }
-  }
-
-  .left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 2;
-    gap: 40px;
-
-    nav {
-      display: flex;
-      gap: 40px;
-    }
-  }
-
-  .download {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-
-    a {
-      display: inline-block;
-      padding: 8px 24px;
-      background: black;
-      border-radius: 4px;
-      color: white;
-    }
-  }
-</style>
+</div>

@@ -1,0 +1,146 @@
+.uvodoPaymentDeveloper {
+  padding: 104px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  :global(.btn) {
+    margin-bottom: 80px;
+    background-color: black;
+    display: inline-flex;
+    color: #fff;
+    box-shadow: -4px 4px 0px #fff;
+
+    &:hover {
+      box-shadow: 0px 0px 0px #fff;
+    }
+  }
+
+  .description {
+    margin: 8px 0 24px;
+  }
+
+  :global(.badge) {
+    background-color: #fff;
+  }
+
+  h2 {
+    max-width: 480px;
+  }
+}
+
+.left {
+  flex: 1;
+  background-color: #d4c5fb;
+  padding: 80px;
+  border-radius: 8px;
+
+  .gateways {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+
+    .gateway {
+      width: 96px;
+      height: 96px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      border: 2px solid #000;
+      background-color: #fff;
+      transform: translate(4px, -4px);
+      box-shadow: 8px 8px 0px #000;
+      transition: transform 0.2s, box-shadow 0.2s;
+
+      &:hover {
+        transform: translate(0px, 0px);
+        box-shadow: 0px 0px 0px #000;
+      }
+    }
+  }
+}
+
+.right {
+  flex: 1;
+  background-color: #ffddf8;
+  padding: 80px 80px 0;
+  border-radius: 8px;
+
+  .stars {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .container {
+    background: #fafafa;
+    border: 2px solid #000000;
+    border-bottom: 0;
+    box-shadow: 8px 0px 0px #000000;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 32px;
+
+    .box {
+      border-radius: 8px;
+      padding: 32px 28px;
+      background-image: url("../../images/dashed.webp");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    p {
+      min-width: max-content;
+    }
+
+    .api span {
+      display: inline-block;
+      background-color: #eafa35;
+      border-radius: 8px;
+      font-weight: 700;
+      padding: 14px;
+      margin-right: 10px;
+      margin-bottom: 22px;
+      color: #000;
+    }
+
+    .curl span {
+      display: inline-block;
+      color: #ff7fe6;
+      margin-bottom: 20px;
+    }
+
+    p {
+      display: block;
+      margin-bottom: 20px;
+
+      span {
+        display: inline-block;
+        color: #8979e8;
+      }
+    }
+  }
+}
