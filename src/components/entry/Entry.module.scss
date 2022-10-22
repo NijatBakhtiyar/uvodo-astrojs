@@ -34,10 +34,10 @@
 
 .admin {
   padding-top: 24px;
-  // background-image: url("../../images/grid-gray.webp");
+  background-image: url("../../images/grid-gray.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -160px;
+  background-position-y: -150px;
 
   .imageAdmin {
     height: 580px;
@@ -50,7 +50,6 @@
   .btnGroup {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     gap: 16px;
 
     a {

@@ -1,6 +1,6 @@
 ---
-import HeaderLink from "./header-link.astro";
 import styles from "./header.module.scss";
+const path = Astro.url.pathname.replace(/\/$/, "");
 ---
 
 <div class={styles.header}>
@@ -29,11 +29,31 @@ import styles from "./header.module.scss";
         </svg>
       </a>
       <nav>
-        <HeaderLink href="/">About us</HeaderLink>
-        <HeaderLink href="/about" target="_blank">Resources</HeaderLink>
-        <HeaderLink href="/a">Blog</HeaderLink>
-        <HeaderLink href="/b">Pricing</HeaderLink>
-        <HeaderLink href="/c">Support</HeaderLink>
+        <a
+          href="/"
+          class={`${styles.navLink} ${path === "/" ? styles.active : ""}`}
+          >About us</a
+        >
+        <a
+          href="/about"
+          class={`${styles.navLink} ${path === "/about" ? styles.active : ""}`}
+          target="_blank">Resources</a
+        >
+        <a
+          href="/about"
+          class={`${styles.navLink} ${path === "/about" ? styles.active : ""}`}
+          target="_blank">Blog</a
+        >
+        <a
+          href="/about"
+          class={`${styles.navLink} ${path === "/about" ? styles.active : ""}`}
+          target="_blank">Pricing</a
+        >
+        <a
+          href="/about"
+          class={`${styles.navLink} ${path === "/about" ? styles.active : ""}`}
+          target="_blank">Support</a
+        >
       </nav>
     </div>
 
