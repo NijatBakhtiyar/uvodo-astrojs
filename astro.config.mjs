@@ -16,4 +16,9 @@ export default defineConfig({
     }),
     react(),
   ],
+  vite: {
+    build: {
+      rollupOptions: { external: ["react", "react-dom"] },
+    },
+  },
 });
